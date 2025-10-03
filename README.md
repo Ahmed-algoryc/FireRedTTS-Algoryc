@@ -1,4 +1,4 @@
-# FireRedTTS2 - Realtime Chat (RunPod-ready)
+# FireRedTTS2 - Realtime Chat 
 
 This repo hosts a working setup for FireRedTTS2 with:
 - Full TTS generation (stable, non-streaming) via WebSocket UI
