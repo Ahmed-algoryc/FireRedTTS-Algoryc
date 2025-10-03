@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Page</title>
+</head>
+<body>
+    <h1>Server is working!</h1>
+    <p>If you can see this, the HTTP server is working correctly.</p>
+    <p>Now try: <a href="voice_chat.html">voice_chat.html</a></p>
+    
+    <script>
+        // Test WebSocket connection
+        const ws = new WebSocket('ws://213.192.2.88:8765');
+        
+        ws.onopen = function() {
+            document.body.innerHTML += '<p style="color: green;">✅ WebSocket connection successful!</p>';
+        };
+        
+        ws.onerror = function(error) {
+            document.body.innerHTML += '<p style="color: red;">❌ WebSocket connection failed: ' + error + '</p>';
+        };
+        
+        ws.onclose = function() {
+            document.body.innerHTML += '<p style="color: orange;">🔌 WebSocket connection closed</p>';
+        };
+    </script>
+</body>
+</html>
+

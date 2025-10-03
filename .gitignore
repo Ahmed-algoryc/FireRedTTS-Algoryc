@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Audio outputs and large artifacts
+*.wav
+*.flac
+*.mp3
+voice_profiles/audio/*.wav
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# Cache
+.cache/
+*.log
+
+# HuggingFace/torch caches
+~/.cache/
+~/.huggingface/
+
+# Runpod/temporary
+/tmp/
+
+# Heavy model weights and artifacts
+pretrained_models/
+**/*.pt
+**/*.bin
+**/*.safetensors
+
+# Local profiles and caches
+voice_profiles/
+.gradio/
+tests/output/
+temp_tts_*.wav
